@@ -1,0 +1,25 @@
+
+	Nombre del producto: GASEOSA COCA COLA CHERRY 355ML
+	Precio del producto: 1,3
+	Categoría del producto: Bebidas
+	*--------------------*--------------------*
+	Nombre del producto: MANDARINA CLEMENTINA LIBRA
+	Precio del producto: 2,69
+	Categoría del producto: Frutas
+	*--------------------*--------------------*
+	Nombre del producto: JAMON DE POLLO DANY LIBRA
+	Precio del producto: 3,65
+	Categoría del producto: Embutidos
+	*--------------------*--------------------*
+	Nombre del producto: CARNE MOLIDA GOLD LIBRA
+	Precio del producto: 4,3
+	Categoría del producto: Carnes
+	*--------------------*--------------------*
+	Nombre del producto: RIB EYE ANGUS CAB LIBRA
+	Precio del producto: 15,99
+	Categoría del producto: Carnes
+	*--------------------*--------------------*
+	Nombre del producto: GALLETA OREO ROLLO REGULAR 108G
+	Precio del producto: 0,97
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
