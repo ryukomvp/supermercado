@@ -47,7 +47,7 @@ namespace supermercado
 			var_producto.categorias[5] = "Verduras";
 			
 			producto[] array_producto = new producto[5];
-			for (int i = 0; i < 1; i++) {
+			for (int i = 0; i < 5; i++) {
 				Console.WriteLine("\n\tProducto N°{0}", i+1);
 				try {
 					Console.Write("\n\tIngrese el nombre del producto: ");
@@ -102,7 +102,7 @@ namespace supermercado
 			
 			Console.Clear();
 			Console.Write("\n\tLos registros se guardaran en un archivo de texto.");
-			for (int i = 0; i < 1; i++) {
+			for (int i = 0; i < 5; i++) {
 				archivo(array_producto[i].nombre, array_producto[i].precio, array_producto[i].cat);
 			}
 			Process.Start("C:/GitHub/supermercado/ficheros/productos.txt");
