@@ -103,3 +103,23 @@
 	Precio del producto: $ 3
 	Categoría del producto: Bebidas
 	*-------------------------*-------------------------*
+	Nombre del producto: Cascada CocoPiña
+	Precio del producto: $ 0,35
+	Categoría del producto: Bebidas
+	*-------------------------*-------------------------*
+	Nombre del producto: Jamon Familiar FUD
+	Precio del producto: $ 2,99
+	Categoría del producto: Embutidos
+	*-------------------------*-------------------------*
+	Nombre del producto: Frijoles para cocer
+	Precio del producto: $ 3,98
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Pechuga de Pollo libra
+	Precio del producto: $ 3,78
+	Categoría del producto: Carnes
+	*-------------------------*-------------------------*
+	Nombre del producto: Cebollin unidad
+	Precio del producto: $ 0,45
+	Categoría del producto: Verduras
+	*-------------------------*-------------------------*
