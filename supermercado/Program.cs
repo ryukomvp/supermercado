@@ -31,7 +31,7 @@ namespace supermercado
 		
 		public static void Main(string[] args)
 		{
-			Console.Title = "Supermercado";
+			Console.Title = "R&B Soul";
 			Console.ForegroundColor = ConsoleColor.White;
 			Console.BackgroundColor = ConsoleColor.Black;
 			Console.Clear();
@@ -45,6 +45,15 @@ namespace supermercado
 			var_producto.categorias[3] = "Embutidos";
 			var_producto.categorias[4] = "Frutas";
 			var_producto.categorias[5] = "Verduras";
+			
+			Console.Write("\n\t* ---------------------- *");
+			Console.Write("\n\t|       BIENVENIDO       |");
+			Console.Write("\n\t* ---------------------- *");
+			Console.Write("\n\t|      Supermercado      |");
+			Console.Write("\n\t|        R&B Soul        |");
+			Console.WriteLine("\n\t* ---------------------- *");
+			Console.ReadKey();
+			Console.Clear();
 			
 			producto[] array_producto = new producto[5];
 			for (int i = 0; i < 5; i++) {
