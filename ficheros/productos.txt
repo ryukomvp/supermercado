@@ -123,3 +123,23 @@
 	Precio del producto: $ 0,45
 	Categoría del producto: Verduras
 	*-------------------------*-------------------------*
+	Nombre del producto: Papaya
+	Precio del producto: $ 1,36
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Gomitas de osito :P
+	Precio del producto: $ 0,5
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Mani Japones
+	Precio del producto: $ 0,25
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Cafe instantaneo
+	Precio del producto: $ 0,9
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: RedBull
+	Precio del producto: $ 3,5
+	Categoría del producto: Bebidas
+	*-------------------------*-------------------------*
