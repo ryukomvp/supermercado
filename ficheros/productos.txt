@@ -23,3 +23,83 @@
 	Precio del producto: 0,97
 	Categoría del producto: Abarrotes
 	*-------------------------*-------------------------*
+	Nombre del producto: Coca Cola Zero
+	Precio del producto: 0,85
+	Categoría del producto: Bebidas
+	*-------------------------*-------------------------*
+	Nombre del producto: Jamón Dany
+	Precio del producto: 2,5
+	Categoría del producto: Embutidos
+	*-------------------------*-------------------------*
+	Nombre del producto: Galletas Oreo
+	Precio del producto: 1,25
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Cereal Zucaritas
+	Precio del producto: 4,99
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Mandarinas ;)
+	Precio del producto: 99,99
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Manzanitas
+	Precio del producto: $ 2,99
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Zanahoria libra
+	Precio del producto: $ 3,49
+	Categoría del producto: Verduras
+	*-------------------------*-------------------------*
+	Nombre del producto: Arroz precocido
+	Precio del producto: $ 1,78
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Pechuga de pollo deshuesada libra
+	Precio del producto: $ 5,55
+	Categoría del producto: Carnes
+	*-------------------------*-------------------------*
+	Nombre del producto: Mandarinas ;)
+	Precio del producto: $ 20
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Libra de azucar
+	Precio del producto: $ 1,49
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Pepsi Cola lite
+	Precio del producto: $ 0,01
+	Categoría del producto: Bebidas
+	*-------------------------*-------------------------*
+	Nombre del producto: Milanesa libra
+	Precio del producto: $ 2,3
+	Categoría del producto: Carnes
+	*-------------------------*-------------------------*
+	Nombre del producto: Mandarinas
+	Precio del producto: $ 1,05
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Kiwi
+	Precio del producto: $ 0,5
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Pera
+	Precio del producto: $ 1,2
+	Categoría del producto: Frutas
+	*-------------------------*-------------------------*
+	Nombre del producto: Cebolla
+	Precio del producto: $ 0,4
+	Categoría del producto: Verduras
+	*-------------------------*-------------------------*
+	Nombre del producto: Salchica de pavo
+	Precio del producto: $ 4,5
+	Categoría del producto: Embutidos
+	*-------------------------*-------------------------*
+	Nombre del producto: Barras de granola 
+	Precio del producto: $ 1,5
+	Categoría del producto: Abarrotes
+	*-------------------------*-------------------------*
+	Nombre del producto: Monster Energy Mango
+	Precio del producto: $ 3
+	Categoría del producto: Bebidas
+	*-------------------------*-------------------------*

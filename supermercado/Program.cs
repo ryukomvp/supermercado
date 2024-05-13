@@ -52,7 +52,7 @@ namespace supermercado
 				try {
 					Console.Write("\n\tIngrese el nombre del producto: ");
 					array_producto[i].nombre = Console.ReadLine();
-					Console.Write("\tIngrese el precio del producto (##,##) : $");
+					Console.Write("\tIngrese el precio del producto (##,##) : $ ");
 					array_producto[i].precio = Double.Parse(Console.ReadLine());
 					for (int j = 0; j < 6; j++) {
 						Console.Write("\n\t{0}. {1}", j+1, var_producto.categorias[j]);
@@ -63,7 +63,7 @@ namespace supermercado
 				} catch (Exception e) {
 					Console.ForegroundColor = ConsoleColor.White;
 					Console.BackgroundColor = ConsoleColor.Red;
-					Console.Write("\t");
+					Console.Write("\n\t");
 					Console.WriteLine(e.Message);
 					Console.ForegroundColor = ConsoleColor.White;
 					Console.BackgroundColor = ConsoleColor.Black;
@@ -78,11 +78,13 @@ namespace supermercado
 			{
 				Console.Clear();
 				try {
-					Console.Write("\n\t¿Qué producto quiere mostrar? ");
+					Console.Write("\n\t¿Qué producto quiere mostrar? (Ingrese 0 para no mostrar productos) : ");
 					int n = int.Parse(Console.ReadLine());
 					if ((n>0) && (n<6)) {
 						Console.Clear();
 						imprimir(n, array_producto[n-1].nombre, array_producto[n-1].precio, array_producto[n-1].cat);
+					} else if(n==0) {
+						Console.Clear();
 					} else {
 						Console.ForegroundColor = ConsoleColor.White;
 						Console.BackgroundColor = ConsoleColor.Red;
@@ -93,7 +95,7 @@ namespace supermercado
 				} catch (Exception e) {
 					Console.ForegroundColor = ConsoleColor.White;
 					Console.BackgroundColor = ConsoleColor.Red;
-					Console.Write("\t");
+					Console.Write("\n\t");
 					Console.WriteLine(e.Message);
 					Console.ForegroundColor = ConsoleColor.White;
 					Console.BackgroundColor = ConsoleColor.Black;
@@ -101,11 +103,25 @@ namespace supermercado
 			} while(salir());
 			
 			Console.Clear();
-			Console.Write("\n\tLos registros se guardaran en un archivo de texto.");
+			Console.ForegroundColor = ConsoleColor.Black;
+			Console.BackgroundColor = ConsoleColor.Cyan;
+			Console.Write("\n\tLos productos ingresados se han registrado en un archivo de texto");
+			Console.ForegroundColor = ConsoleColor.White;
+			Console.BackgroundColor = ConsoleColor.Black;
 			for (int i = 0; i < 5; i++) {
-				archivo(array_producto[i].nombre, array_producto[i].precio, array_producto[i].cat);
+				archivo(i+1, array_producto[i].nombre, array_producto[i].precio, array_producto[i].cat);
 			}
-			Process.Start("C:/GitHub/supermercado/ficheros/productos.txt");
+			try {
+				Console.Write("\n\tAbriendo archivo...");
+				Process.Start("C:/GitHub/supermercado/ficheros/productos.txt");
+			} catch (Exception e) {
+				Console.ForegroundColor = ConsoleColor.White;
+				Console.BackgroundColor = ConsoleColor.Red;
+				Console.Write("\n\t");
+				Console.WriteLine(e.Message);
+				Console.ForegroundColor = ConsoleColor.White;
+				Console.BackgroundColor = ConsoleColor.Black;
+			}
 			Console.ReadKey(true);
 			creditos();
 		}
@@ -131,7 +147,7 @@ namespace supermercado
 				Console.Write("\n\tPrecio del producto: ");
 				Console.ForegroundColor = ConsoleColor.Black;
 				Console.BackgroundColor = ConsoleColor.Green;
-				Console.Write("${0}", b);
+				Console.Write("$ {0}", b);
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Black;
 				// Categoria
@@ -144,26 +160,31 @@ namespace supermercado
 			} catch (Exception e) {
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Red;
-				Console.Write("\t");
+				Console.Write("\n\t");
 				Console.WriteLine(e.Message);
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Black;
 			}
 		}
 		
-		static void archivo(string a, Double b, string c)
+		static void archivo(int n, string a, Double b, string c)
 		{
 			try {
-				Escribir = new StreamWriter("C:/GitHub/supermercado/ficheros/productos.txt", true);
-				Escribir.Write("\n\tNombre del producto: {0}", a);
-				Escribir.Write("\n\tPrecio del producto: {0}", b);
-				Escribir.Write("\n\tCategoría del producto: {0}", c);
-				Escribir.Write("\n\t*-------------------------*-------------------------*");
-				Escribir.Close();
+				if (a.Equals("") || b.Equals("") || c.Equals("")) {
+					Console.Write("\n\tProducto N°{0} vacio, ENTER para continuar al sig producto", n);
+					Console.ReadKey();
+				} else{
+					Escribir = new StreamWriter("C:/GitHub/supermercado/ficheros/productos.txt", true);
+					Escribir.Write("\n\tNombre del producto: {0}", a);
+					Escribir.Write("\n\tPrecio del producto: $ {0}", b);
+					Escribir.Write("\n\tCategoría del producto: {0}", c);
+					Escribir.Write("\n\t*-------------------------*-------------------------*");
+					Escribir.Close();
+				}
 			} catch (Exception e) {
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Red;
-				Console.Write("\t");
+				Console.Write("\n\t");
 				Console.WriteLine(e.Message);
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Black;
@@ -179,13 +200,13 @@ namespace supermercado
 				if (resp == 'Y' || resp == 'y') {
 					return true;
 				} else {
-					creditos();
+//					creditos();
 					return false;
 				}
 			} catch (Exception e) {
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Red;
-				Console.Write("\t");
+				Console.Write("\n\t");
 				Console.WriteLine(e.Message);
 				Console.ForegroundColor = ConsoleColor.White;
 				Console.BackgroundColor = ConsoleColor.Black;
